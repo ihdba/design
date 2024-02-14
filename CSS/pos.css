@@ -1,0 +1,194 @@
+body{
+    /* height: 200vh; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container{
+    width: 550px;
+    border: 2px solid #000;
+    margin: 50px auto;
+    position: relative;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+}
+
+.purple{
+    background-color: purple;
+    position: relative;  /* relative to parent container, absolute to body */
+    left: 50px;
+    top: 20px;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.yellow{
+    background-color: yellow;
+    position: absolute;
+    /* The absolute position takes the element OUT of the natural flow, in this case in teh CONTAINER and put it right next */
+    right: 5px;
+}
+
+.red{
+    background-color: red;
+    position: fixed; /* fixed element stay in the same position */
+    top: 0px;
+    left: 0px;
+    box-shadow: 7px 7px 10px 5px lightgray ;
+}
+
+/*  BOX-SHADOW parameters: 
+
+mandatory Vertical, Horizontal and Color
+
+Parameter after the first two is the BLUR effect
+
+the foruth value is the SPREAD of the SHADOW
+
+*/
+
+
+.orange{
+    background-color: orange;
+    /* box-shadow: 5px 5px 5px lightpink; */
+   
+
+}
+
+.second_container{
+    width: 550px;
+    border: 2px solid #000;
+    margin: 150px auto;
+    /* margin-bottom: 0px; */
+    position: relative;
+}
+
+.blue{
+    background-color: blue;
+    /* Inside shadow */
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 30px 60px -12px inset, rgba(255, 255, 255, 0.3) 0px 18px 36px -18px inset;
+}
+
+.black{
+    background-color: black;
+    position: relative;
+    
+    left: 150px;
+}
+
+.green{
+    background-color: green;
+    position: relative;
+    left: 300px;
+}
+
+
+.gray{
+    background-color: gray;
+    position: relative;
+    left: 50px;
+    bottom: 0px;
+}
+
+
+
+/* COLORS */
+
+/* Another way to declare variables  */
+.Magenta{
+  --clr: #FF00FF;
+}
+
+.Lime{
+  --clr: #00FF00;
+}
+
+.Olive{
+    --clr: #808000;
+}
+
+.Sienna{
+    --clr: #A0522D;
+}
+
+.Chocolate{
+    --clr: #D2691E;
+}
+
+.Blue{
+    --clr: #0000FF;
+}
+
+.box-test{
+    width: 400px;
+    height: 200px;
+    background-color: var(--clr);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 5x rgba(0, 0, 0, 0.3) ;
+}
+
+.scroll{
+    font-size: 2rem;
+    margin-top: 50px;
+    text-shadow: 2px 4px 5px #808080;
+}
+
+.scroll h2{
+    
+    text-transform: uppercase;
+}
+
+.box-circle{
+    width: 400px;
+    height: 400px;
+    background-color: var(--clr);
+    clip-path: circle(50% at 0 0);
+    margin: 30px;
+    transition: all 2s ease;
+}
+
+.R{
+
+    clip-path: circle(50% at 20px 50px);
+
+}
+
+.R:hover{
+    clip-path: circle(100%);
+
+}
+
+/* P for polygon */
+.P{
+    /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+    /* triangle */
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.P:hover{
+    /* clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%); */
+    /* triangle */
+    clip-path: polygon(30% 0%, 0% 100%, 100% 100%);
+}
+
+.box-title{
+    width: 600px;
+    background-color: wheat;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+}

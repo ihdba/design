@@ -1,0 +1,107 @@
+
+:root{
+    --GRAY_CLOUD: #B6B6B4;
+    --DEER_BROWN: #E6BF83;
+    --DARK_SIENNA: #8A4117;
+    --CARROT_ORANGE: #F88017;
+    --WHITE: #fff;
+
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    min-height: 100vh;
+    /* background-image: url("../img/fire.jpg"); */
+     */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+/* .nav */
+
+.nav{
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    background-color: var(--GRAY_CLOUD);
+}
+
+.logo{
+    color: var(--DARK_SIENNA);
+    margin-right: auto;
+}
+
+
+
+.navbar{
+   
+  
+}
+
+.navbar ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.navbar ul li{
+    list-style: none;
+    margin: 5px 10px 5px 10px;
+}
+
+.navbar a{
+    color: var(--DARK_SIENNA);
+    text-decoration: none;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+.hero{
+    min-height: 200px;
+    background-color: #f7f7f7;
+}
+
+.gallery{
+    min-height: 300px;
+    background-color: lightgray;
+}
+
+.services{
+    min-height: 200px;
+    background-color: var(--DARK_SIENNA);
+}
+
+.about{
+    min-height: 300px;
+    background-color: var(--DEER_BROWN);
+}
+
+.contact{
+    min-height: 300px;
+    background-color: var(--GRAY_CLOUD);
+}
+
+.footer{
+    min-height: 300px;
+    background-color: var(--DEER_BROWN);
+}

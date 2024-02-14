@@ -1,0 +1,124 @@
+/* Global */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&family=Roboto:wght@400;500&display=swap');
+
+html {
+	box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+:root{
+	--GRAINITE: #837E7C;
+	--LIGHTOLIVE: #B8BC86;
+	--OLIVE:  #808000;
+	--OLIVEDRAB: #6B8E23;
+	--SAGE_GREEN: #848B79;
+    --COLOR: #000;
+    --GREEN_ONION: #6AA121;
+    --WHITE: #fff;
+
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.btn {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 7px 12px;
+    transition: background-color .3s;
+    outline: none;
+    border: none;
+}
+
+
+.btn--state__success {
+    color: blue;
+    background: var(--WHITE);
+    border-color: var(--OLIVE);
+}
+
+
+
+.btn--state__danger {
+    color: red;
+    background: var(--WHITE);
+    border-color: var(--COLOR);
+}
+
+
+.underline {
+    text-decoration: underline;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+/* Media screen */
+
+
+/*@media screen and (max-width: 1200px){
+    .container{
+        width: 992px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container{
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
+*/
+
+
+/*  =============== BEM tutorial  =================*/
+
+/* 
+Only blocks that are reusable, therefor no margins are used.
+If needed, margins can be applied to additional class of the element
+*/
+
+
+/* &&&&&&&&&&&& Button &&&&&&&&&& */
+
+
+.btn:hover {
+    background-color: var(--SAGE_GREEN);
+}
+
+.btn:active {
+    background-color: var(--OLIVE);
+}
+
+.btn:focus {
+    outline: 1px solid var(--GRAINITE);
+    outline-offset: 3px;
+}
+

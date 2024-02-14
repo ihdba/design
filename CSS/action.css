@@ -1,0 +1,26 @@
+
+
+/* Buttons */
+
+.btn{
+    width: 120px;
+    height: 30px;
+    color: var(--WHITE);
+    background-color: var(--NEON_BLUE);
+    border: none;
+    border-radius: 25px;
+  
+    font-size: 0.8rem;
+    padding: 5px 15px;
+}
+
+
+.a_btn{
+    background-color: var(--DENIM_DARK_BLUE);
+    border: none;
+    border-radius: 5px;
+    padding: 0px 15px;
+    font-weight: normal;
+    font-size: 0.8rem;
+    text-align: center;
+}
